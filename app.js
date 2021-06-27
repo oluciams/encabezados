@@ -6,7 +6,7 @@ const app = express();
 
 app.get('/', (req, res) => {
     let header = req.headers['user-agent']
-    res.send(`<p>El navegador es: ${header}`);
+    res.send(`${header}`);
 });
 
 
